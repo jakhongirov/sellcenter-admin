@@ -95,7 +95,7 @@ function EditAds({ editModal, setEditModal, api, id }) {
                   <input required type="text" name="text" placeholder="Text" />
                   <input required type="text" name="link" placeholder="Link" />
                   <button className="add_btn" type="submit">
-                    Add
+                    Edit
                   </button>
                 </div>
               </div>
