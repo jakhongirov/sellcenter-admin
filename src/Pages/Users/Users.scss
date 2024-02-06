@@ -1,0 +1,49 @@
+.table_wrap {
+  padding-top: 100px;
+}
+table {
+  width: 100%;
+  td,
+  th {
+    padding: 15px;
+  }
+  border-collapse: collapse;
+  border: 1px solid #cccccc;
+}
+thead {
+  background: var(--1, #01384d);
+  color: #fff;
+  tr {
+    padding: 50px;
+  }
+}
+tbody {
+  text-align: center;
+  tr {
+    border: 1px solid #cccccc;
+  }
+}
+.table_tr {
+  td {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
+.date {
+  color: rgba(0, 0, 0, 0.5);
+}
+td {
+  i {
+    font-size: 26px;
+    &.fa-xmark {
+      color: #d61f1f;
+    }
+    &.fa-check {
+      color: #05c46b;
+    }
+  }
+}

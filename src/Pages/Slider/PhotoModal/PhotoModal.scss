@@ -1,0 +1,40 @@
+.modal_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.1
+  ); /* Цвет фона с прозрачностью для эффекта размытого фона */
+  backdrop-filter: blur(2px); /* Применение эффекта размытого фона */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100; /* Положение фона поверх всего остального контента */
+}
+.photo_modal {
+  .img_data {
+    width: 400px;
+    width: 600px;
+  }
+  padding: 25px 24px;
+  position: fixed;
+  background-color: #fff;
+  top: 120px;
+  right: 350px;
+  z-index: 10;
+  box-shadow: 0 0 30px 1px #01374d52;
+  border-radius: 8px;
+}
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  width: 25px;
+  border-radius: 0 5px 0 0;
+}
