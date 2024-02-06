@@ -32,7 +32,7 @@ function AddPage({ addSlider, setAddSlider, api, name }) {
       .post("news/add", formData, {
         headers: {
           token: token,
-          "Content-Type": "application/json",
+          "Content-Type": "multipart/form-data",
         },
       })
       .then((response) => {

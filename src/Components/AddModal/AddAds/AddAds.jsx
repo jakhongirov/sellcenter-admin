@@ -27,7 +27,7 @@ function AddAds({ addSlider, setAddSlider, api, name }) {
       .post(api, formData, {
         headers: {
           token: token,
-          "Content-Type": "application/json",
+          "Content-Type": "multipart/form-data",
         },
       })
       .then((response) => {

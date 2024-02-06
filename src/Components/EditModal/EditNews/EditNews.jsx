@@ -75,7 +75,7 @@ function EditNews({ titleValue, imgValue, langValue, descValue }) {
       .put("news/update", formData, {
         headers: {
           token: token,
-          "Content-Type": "application/json",
+          "Content-Type": "multipart/form-data",
         },
       })
       .then((response) => {

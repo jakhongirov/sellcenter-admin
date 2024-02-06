@@ -29,7 +29,7 @@ function EditAds({ editModal, setEditModal, api, id }) {
       .put(api, formData, {
         headers: {
           token: token,
-          "Content-Type": "application/json",
+          "Content-Type": "multipart/form-data",
         },
       })
       .then((response) => {
