@@ -58,15 +58,21 @@ function AddPayment({ addSlider, setAddSlider, api, name }) {
 
   const handleInputChange = (e) => {
     const inputValue = e.target.value || "";
-    const inputDigitsOnly = inputValue.replace(/\D/g, "");
 
-    // Добавляем точку после каждых двух цифр, кроме последних двух
-    let formattedValue = inputDigitsOnly.replace(
-      /(\d{2})(?=\d{2}(?!\d))/g,
-      "$1."
-    );
+    // Проверяем, есть ли уже точка в значении
+    if (inputValue.includes(".")) {
+      setFormattedInput(inputValue);
+    } else {
+      const inputDigitsOnly = inputValue.replace(/\D/g, "");
 
-    setFormattedInput(formattedValue);
+      // Добавляем точку после каждых двух цифр, кроме последних двух
+      let formattedValue = inputDigitsOnly.replace(
+        /(\d{2})(?=\d{2}(?!\d))/g,
+        "$1."
+      );
+
+      setFormattedInput(formattedValue);
+    }
   };
 
   return (
