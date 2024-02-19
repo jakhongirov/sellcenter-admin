@@ -15,6 +15,7 @@ function EditPayment({
 	priceValue,
 	descValue,
 	langValue,
+	imageCountValue,
 }) {
 	const [selectedImage, setSelectedImage] = useState(null); // Состояние для хранения выбранного изображения
 	const [selectedLanguage, setSelectedLanguage] = useState(null);
@@ -28,7 +29,7 @@ function EditPayment({
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		const { price, title, desc } = e.target.elements;
+		const { price, title, desc, image_count } = e.target.elements;
 
 		const data = {
 			id: id,
@@ -36,6 +37,7 @@ function EditPayment({
 			price: formattedInput,
 			desc: desc.value,
 			lang: selectedLanguage,
+      image_count: image_count.value
 		};
 		console.log(data);
 
@@ -99,14 +101,14 @@ function EditPayment({
 							<div className='add_page_wrapper'>
 								<h1>Edit</h1>
 								<form onSubmit={handleSubmit}>
+									<input
+										required
+										type='text'
+										name='title'
+										placeholder='Title'
+										defaultValue={titleValue}
+									/>{' '}
 									<div className='form_wrapper'>
-										<input
-											required
-											type='text'
-											name='title'
-											placeholder='Title'
-											defaultValue={titleValue}
-										/>{' '}
 										<input
 											required
 											type='text'
@@ -127,6 +129,12 @@ function EditPayment({
 											<option value='sp'>Spanish</option>
 											<option value='sw'>Swedish</option>
 										</select>
+										<input
+											type='number'
+											name='image_count'
+											placeholder='Image count'
+											defaultValue={imageCountValue}
+										/>{' '}
 									</div>
 									<div className='textarea'>
 										<textarea
