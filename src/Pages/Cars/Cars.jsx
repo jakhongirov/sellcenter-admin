@@ -22,7 +22,7 @@ function Cars() {
 
   useEffect(() => {
     http
-      .get(`cars/admin/list?limit=100&offset=${offset}`, {
+      .get(`cars/admin/list?limit=10&offset=${offset}`, {
         headers: {
           token: token,
           "Content-Type": "application/json",
@@ -42,7 +42,7 @@ function Cars() {
           err: error,
         })
       );
-  }, []);
+  }, [offset]);
 
   const checkboxChange = (e) => {
     const id = JSON.parse(e.target.dataset.id);
@@ -62,7 +62,6 @@ function Cars() {
       })
       .catch((err) => console.log(err));
   };
-
   return (
     <div>
       {carsList.isFetched ? (
