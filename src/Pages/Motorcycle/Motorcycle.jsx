@@ -73,7 +73,7 @@ function Motorcycle() {
             <DeleteModal
               deleteModal={deleteModal}
               setDeleteModal={setDeleteModal}
-              api={"motorcycle/delete"}
+              api={"motorcycles/delete"}
               id={"id"}
               mark_id={selectedSliderMakeId - 0}
             />

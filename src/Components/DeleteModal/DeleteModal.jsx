@@ -23,17 +23,17 @@ function DeleteModal({ deleteModal, setDeleteModal, api, id, mark_id }) {
       },
       data: data,
     };
-
     axios
       .request(config)
       .then((response) => {
         console.log(JSON.stringify(response.data));
-        if (response.status === 200) {
+        if (response.data .status === 200) {
           window.location.reload();
         }
       })
       .catch((error) => {
         console.log(error);
+        console.log(data);
       });
   };
   return (

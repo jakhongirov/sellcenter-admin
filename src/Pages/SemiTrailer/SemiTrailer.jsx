@@ -20,7 +20,7 @@ function SemiTrailer() {
 
   useEffect(() => {
     http
-      .get(`semitrailers/admin/list?limit=100&offset=${offset}`, {
+      .get(`semitrailers/admin/list?limit=10&offset=${offset}`, {
         headers: {
           token: token,
           "Content-Type": "application/json",

@@ -21,7 +21,7 @@ function AgriculturalVehicle() {
 
   useEffect(() => {
     http
-      .get(`agriculturals/admin/list?limit=100&offset=${offset}`, {
+      .get(`agriculturals/admin/list?limit=10&offset=${offset}`, {
         headers: {
           token: token,
           "Content-Type": "application/json",

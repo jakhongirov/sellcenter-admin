@@ -20,7 +20,7 @@ function Truck() {
 
   useEffect(() => {
     http
-      .get(`trucks/admin/list?limit=100&offset=${offset}`, {
+      .get(`trucks/admin/list?limit=10&offset=${offset}`, {
         headers: {
           token: token,
           "Content-Type": "application/json",

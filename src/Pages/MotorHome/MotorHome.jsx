@@ -22,7 +22,7 @@ function MotorHome() {
 
   useEffect(() => {
     http
-      .get(`motorhomes/admin/list?limit=100&offset=${offset}`, {
+      .get(`motorhomes/admin/list?limit=10&offset=${offset}`, {
         headers: {
           token: token,
           "Content-Type": "application/json",
