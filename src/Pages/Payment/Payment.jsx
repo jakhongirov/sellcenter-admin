@@ -25,6 +25,7 @@ function Payment() {
   const [selectedSliderMakeId, setSelectedSliderMakeId] = useState(null);
   const [selectedSliderMakeTitle, setSelectedSliderMakeTitle] = useState("");
   const [selectedSliderMakePrice, setSelectedSliderMakePrice] = useState("");
+  const [selectedImageCount, setselectedImageCount] = useState(0);
   const [selectedSliderMakeDesc, setSelectedSliderMakeDesc] = useState("");
   const [selectedSliderMakeLang, setSelectedSliderMakeLang] = useState("");
   const [token, setToken] = useToken();
@@ -110,6 +111,7 @@ function Payment() {
               descValue={selectedSliderMakeDesc}
               langValue={selectedSliderMakeLang}
               priceValue={selectedSliderMakePrice}
+              imageCountValue={selectedImageCount}
               api={"price/list/update"}
               id={selectedSliderMakeId}
             />
@@ -119,6 +121,7 @@ function Payment() {
                   <th>Title</th>
                   <th>Price</th>
                   <th>Language</th>
+                  <th>Image count</th>
                   <th>Status</th>
                   <th></th>
                 </tr>
@@ -129,6 +132,7 @@ function Payment() {
                     <td>{e.price_item_title}</td>
                     <td>{e.price_item_price}</td>
                     <td>{e.price_item_lang}</td>
+                    <td>{e.image_count}</td>
                     <td>
                       <label className="toggle-switch">
                         <input
@@ -152,6 +156,7 @@ function Payment() {
                           setSelectedSliderMakeLang(e.price_item_lang);
                           setSelectedSliderMakePrice(e.price_item_price);
                           setSelectedSliderMakeId(e.price_item_id);
+                          setselectedImageCount(e.image_count)
                         }}
                       >
                         <img src={Edit} alt="edit" />
