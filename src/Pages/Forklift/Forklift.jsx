@@ -115,7 +115,7 @@ function Forklift() {
                         <img src={DeleteSvg} alt="deleteBtn" />
                       </button>
                       <Link
-                        to={`https://sell-center-slash.netlify.app/forklift/${selectedSliderMakeId}`}
+                        to={`https://sellcenter.eu/forklift/${selectedSliderMakeId}`}
                       >
                         <button
                           className="ellipsis"

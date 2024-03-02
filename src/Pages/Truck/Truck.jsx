@@ -116,7 +116,7 @@ function Truck() {
                         <img src={DeleteSvg} alt="deleteBtn" />
                       </button>
                       <Link
-                        to={`https://sell-center-slash.netlify.app/truck/${selectedSliderMakeId}`}
+                        to={`https://sellcenter.eu/truck/${selectedSliderMakeId}`}
                       >
                         <button
                           className="ellipsis"

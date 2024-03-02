@@ -117,7 +117,7 @@ function ConstructionMachine() {
                         <img src={DeleteSvg} alt="deleteBtn" />
                       </button>
                       <Link
-                        to={`https://sell-center-slash.netlify.app/constructions/${selectedSliderMakeId}`}
+                        to={`https://sellcenter.eu/constructions/${selectedSliderMakeId}`}
                       >
                         <button
                           className="ellipsis"

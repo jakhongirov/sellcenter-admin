@@ -119,7 +119,7 @@ function Motorcycle() {
                         <img src={DeleteSvg} alt="deleteBtn" />
                       </button>
                       <Link
-                        to={`https://sell-center-slash.netlify.app/motorbike/${selectedSliderMakeId}`}
+                        to={`https://sellcenter.eu/motorbike/${selectedSliderMakeId}`}
                       >
                         <button
                           className="ellipsis"

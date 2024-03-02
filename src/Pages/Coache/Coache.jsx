@@ -117,7 +117,7 @@ function Coache() {
                         <img src={DeleteSvg} alt="deleteBtn" />
                       </button>
                       <Link
-                        to={`https://sell-center-slash.netlify.app/coache/${selectedSliderMakeId}`}
+                        to={`https://sellcenter.eu/coache/${selectedSliderMakeId}`}
                       >
                         <button
                           className="ellipsis"

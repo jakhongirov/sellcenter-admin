@@ -119,7 +119,7 @@ function MotorHome() {
                         <img src={DeleteSvg} alt="deleteBtn" />
                       </button>
                       <Link
-                        to={`https://sell-center-slash.netlify.app/motorhome/${selectedSliderMakeId}`}
+                        to={`https://sellcenter.eu/motorhome/${selectedSliderMakeId}`}
                       >
                         <button
                           className="ellipsis"

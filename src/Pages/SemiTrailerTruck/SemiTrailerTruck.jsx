@@ -114,7 +114,7 @@ function SemiTrailerTruck() {
                         <img src={DeleteSvg} alt="deleteBtn" />
                       </button>
                       <Link
-                        to={`https://sell-center-slash.netlify.app/semitruck/${selectedSliderMakeId}`}
+                        to={`https://sellcenter.eu/semitruck/${selectedSliderMakeId}`}
                       >
                         <button
                           className="ellipsis"
