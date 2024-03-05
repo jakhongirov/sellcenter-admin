@@ -117,7 +117,7 @@ function AgriculturalVehicle() {
                         <img src={DeleteSvg} alt="deleteBtn" />
                       </button>
                       <Link
-                        to={`https://sell-center-slash.netlify.app/agricultural/${selectedSliderMakeId}`}
+                        to={`https://sellcenter.eu/agricultural/${selectedSliderMakeId}`}
                       >
                         <button
                           className="ellipsis"

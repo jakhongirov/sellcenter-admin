@@ -49,7 +49,7 @@ function Motorcycle() {
     const id = JSON.parse(e.target.dataset.id);
     const status = e.target.checked;
 
-    fetch("https://slash./api/v1/motorcycles/update/status", {
+    fetch("https://server.sellcenter.eu/api/v1/motorcycles/update/status", {
       method: "PUT",
       body: JSON.stringify({
         motorcycle_id: id,
