@@ -34,7 +34,7 @@ function UsersCompany() {
 
   useEffect(() => {
     http
-      .get(`companies/admin/list?limit=20&offset=${offset}`, {
+      .get(`companies/admin/list?limit=10&offset=${offset}`, {
         headers: {
           token: token,
           "Content-Type": "application/json",
@@ -65,7 +65,7 @@ function UsersCompany() {
             <DeleteModal
               deleteModal={deleteModal}
               setDeleteModal={setDeleteModal}
-              api={"company/delete/"}
+              api={`company/delete/${selectedUserId}`}
               id={"id"}
               mark_id={selectedUserId - 0}
             />
